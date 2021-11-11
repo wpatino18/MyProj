@@ -1,6 +1,6 @@
 - tasks:
    - name: Compress Directory contents
      archive:
-       path: /tmp/test/deal.xml
+       path: /tmp/test/deal
        dest: /tmp/test/deal.zip
        format: zip
