@@ -1,6 +1,5 @@
 - tasks:
-   -
-     archive:
+   - archive:
        path: /tmp/test/deal
        dest: /tmp/test/deal.zip
        format: zip
