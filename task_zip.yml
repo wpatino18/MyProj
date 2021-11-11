@@ -1,6 +1,9 @@
-- tasks:
-   - community.general.archive:
-       path: 
-       - /tmp/test/deal
-       dest: /tmp/test/deal.zip
-       format: zip
+
+- name: convert xml files to zip files
+  hosts: all
+  tasks:
+    - name: execution of the archive module
+      archive:
+        path: /tmp/test/deal.xml
+        dest: /tmp/test/deal.zip
+        format: zip
