@@ -5,7 +5,7 @@ tasks:
         path: /tmp/test/{{item}}.xml
         dest: /tmp/test/{{item}}.zip
       loop:
-        - "ClrHs"
-        - "ClrMb"
-        - "ClrMbCon"
+        - "ConnAct"
+        - "deal"
+        - "FirmCptyrel"
         format: zip
