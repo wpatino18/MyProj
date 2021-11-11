@@ -1,0 +1,11 @@
+---
+tasks:
+    - name: Compress Directory contents
+      archive:
+        path: /tmp/test/{{item}}.xml
+        dest: /tmp/test/{{item}}.zip
+      loop:
+        - "ClrHs"
+        - "ClrMb"
+        - "ClrMbCon"
+        format: zip
