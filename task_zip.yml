@@ -1,13 +1,10 @@
----
-- name: kk
-  hosts: all
-  tasks:
-    - name: Compress Directory contents
-      archive:
-        path: /tmp/test/{{item}}.xml
-        dest: /tmp/test/{{item}}.zip
-      loop:
+-  tasks:
+     - name: Compress Directory contents
+       archive:
+          path: /tmp/test/{{item}}.xml
+          dest: /tmp/test/{{item}}.zip
+          format: zip
+       loop:
         - "ConnAct"
         - "deal"
         - "FirmCptyrel"
-        format: zip
