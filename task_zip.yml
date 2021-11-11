@@ -1,5 +1,5 @@
 - tasks:
-   - archive:
+   - community.general.archive:
        path: 
        - /tmp/test/deal
        dest: /tmp/test/deal.zip
