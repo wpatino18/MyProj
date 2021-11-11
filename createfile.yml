@@ -1,0 +1,7 @@
+- name: files
+  hosts: all
+  tasks:
+     - name: Give insecure permissions to an existing file
+       file:
+        path: /work
+        state: touch
