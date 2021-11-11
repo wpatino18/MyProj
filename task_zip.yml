@@ -1,10 +1,6 @@
 - tasks:
    - name: Compress Directory contents
      archive:
-       path: /tmp/test/{{item}}.xml
-       dest: /tmp/test/{{item}}.zip
+       path: /tmp/test/deal.xml
+       dest: /tmp/test/deal.zip
        format: zip
-     loop:
-       - "ConnAct"
-       - "deal"
-       - "FirmCptyrel"
