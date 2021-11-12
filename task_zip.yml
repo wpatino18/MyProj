@@ -3,7 +3,7 @@
   hosts: all
   tasks:
     - name: execution of the archive module
-      archive:
+      community.general.archive::
         path: /tmp/test/deal.xml
         dest: /tmp/test/deal.zip
         format: zip
